@@ -1,0 +1,66 @@
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHFxY-Ddw5Vb3JQmlhplqzCJJqOPql_XnfC5HXY5XrKYZksQ104uLVmB8&s=10">
+<input type="text" placeholder="img do personagem" id="img">
+
+<button onclick="cadastrar()">
+    cadastrar
+</button>
+
+<button onclick="buscar()">
+    buscar
+</button>
+
+<script>
+     async function buscar () {
+        const dragonball = await fetch('http://localhost:3000/dragonball')
+    }   
+
+    async function cadastrar () {
+        const imagem = document.getElementById('img').value
+
+        const dragonball = {
+            imagem
+        }
+
+        const resposta = await fetch('http://localhost:3000/dragonball', {
+            method: 'POST',
+            body: JSON.stringify(dragon),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+    }
+</script>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlI6kwtgY0pHG-AKG5WMR7mnrFHn-VNg0QoorzvyfsJe1MUvUgJxvOu5k&s=10">
+<input type="text" placeholder="img do personagem" id="img">
+<input type="text" placeholder="nome do personagem" id="nome">
+
+<button onclick="cadastrar()">
+    cadastrar
+</button>
+
+<button onclick="buscar()">
+    buscar
+</button>
+
+<script>
+     async function buscar () {
+        const dragonball = await fetch('http://localhost:3000/dragonball')
+    }   
+
+    async function cadastrar () {
+        const imagem = document.getElementById('img').value
+
+        const dragonball = {
+            imagem
+        }
+
+        const resposta = await fetch('http://localhost:3000/dragonball', {
+            method: 'POST',
+            body: JSON.stringify(dragon),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+    }
+</script>
